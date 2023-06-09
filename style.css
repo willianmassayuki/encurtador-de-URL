@@ -4,8 +4,26 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+    line-height: 1.5;
+}
+
 body {
     font-size: 18px;
+}
+
+.desktop {
+    display: none;
 }
 
 header {
@@ -74,6 +92,14 @@ hr {
   top: -10px;
 }
 
+.principal {
+    margin: 30px;
+    text-align: center;
+}
+
+.principal img{
+    width: 100%;
+}
 
 input:valid {
     background-color: lightgreen;
