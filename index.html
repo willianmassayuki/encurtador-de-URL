@@ -18,89 +18,111 @@
           <a href="#">Pricing</a>
           <a href="#">Resources</a>
           <hr>
+          <div class="canto">
           <a href="#">Login</a> 
-          <a class="botao-capsula" href="#">Sign Up</a>
+          <a class="botao-capsula-menu" href="#">Sign Up</a>
+          </div>
       </nav>
   </header>
   <main>
     <section class="principal">
-      <img src="images\illustration-working.svg" alt="Illustration working"></img>
-      <h1>More than just shorter links</h1>
-      <p>Build your brand’s recognition and get detailed insights 
-      on how your links are performing.</p>
-      <a class="botao-capsula" href="#">Get Started</a>
-    </section>
-    <section>
-      <div id="encurtador">
-        <img class="mobile" src="images\bg-shorten-mobile.svg"></img>
-        <img class="desktop" src="images\bg-shorten-desktop.svg"></img>
-        <input type="url" value="Shorten a link here..."></input>
-        <button class="encurta-url">Shorten It!</button>
+      <div class="caixa-banner">
+        <img class="banner" src="images\illustration-working.svg" alt="Illustration working"></img>
+      </div>
+      <div class="principal-texto">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand’s recognition and get detailed insights 
+        on how your links are performing.</p>
+        <a class="botao-capsula" href="#">Get Started</a>
       </div>
     </section>
-
-    <section>
-      <div>
+    <div class="fundo">
+    <div class="margem">
+    <section class="encurtador" id="encurtador"> 
+        <img class="mobile bg" src="images\bg-shorten-mobile.svg"></img>
+        <img class="desktop bg" src="images\bg-shorten-desktop.svg"></img>
+       <div class="caixa-conteudo flex-row">
+          <input class="url" type="url" placeholder="   Shorten a link here..."></input>
+          <button class="encurta-url">Shorten It!</button>
+        </div>
+    </section>
+   
+    <section class="estatisticas">
+      <div class="caixa">
         <h2>Advanced Statistics</h2>
         <p>Track how your links are performing across the web with our 
         advanced statistics dashboard.</p>
       </div>
-      <article>
-        <img class="icones" src="images\icon-brand-recognition.svg" alt="Brand Recognition icon"></img>
-        <h3>Brand Recognition</h3>
-       <p>Boost your brand recognition with each click. Generic links don’t 
-        mean a thing. Branded links help instil confidence in your content.</p>
-      </article>
-      <article>
-        <img class="icones" src="images\icon-detailed-records.svg" alt="Detailed Records icon"></img>
-        <h3>Detailed Records</h3>
-        <p>Gain insights into who is clicking your links. Knowing when and where 
-        people engage with your content helps inform better decisions.</p>
-      </article>
-      <article>
-        <img class="icones" src="images\icon-fully-customizable.svg" alt="Fully Customizable icon"></img>
-        <h3>Fully Customizable</h3>
-        <p>Im prove brand awareness and content discoverability through customizable 
-        links, supercharging audience engagement.</p>
-      </article>
-    </section>
-    <section>
-      <img class="mobile" src="images\bg-boost-mobile.svg"></img>
-      <img class="desktop" src="images\bg-boost-desktop.svg"></img>
-      <h4>Boost your links today</h4>
-      <a class="botao-capsula" href="#">Get Started</a>
+      
+      <div class="topicos">
+        <div class="linha"><hr></div>
+         
+        <article class="caixa-topicos topico-recognition">
+          <div class="icones">
+            <img src="images\icon-brand-recognition.svg" alt="Brand Recognition icon"></img>
+          </div>
+          <h3>Brand Recognition</h3>
+        <p>Boost your brand recognition with each click. Generic links don’t 
+          mean a thing. Branded links help instil confidence in your content.</p>
+        </article>
+        <article class="caixa-topicos topico-records">
+          <img class="icones" src="images\icon-detailed-records.svg" alt="Detailed Records icon"></img>
+          <h3>Detailed Records</h3>
+         
+          <p>Gain insights into who is clicking your links. Knowing when and where 
+          people engage with your content helps inform better decisions.</p>
+        </article>
+        
+        <article class="caixa-topicos topico-customizable">
+          <img class="icones" src="images\icon-fully-customizable.svg" alt="Fully Customizable icon"></img>
+          <h3>Fully Customizable</h3>
+          <p>Im prove brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.</p>
+        </article>
+      </div>
     </section>
   </main>
+
+  <section class="rodape">
+    <img class="mobile bg" src="images\bg-boost-mobile.svg"></img>
+    <img class="desktop bg" src="images\bg-boost-desktop.svg"></img>
+    <div class="caixa-conteudo-rodape">
+      <h4>Boost your links today</h4>
+      <a class="botao-capsula" href="#">Get Started</a>
+    </div>
+  </section>
+</div>
+</div>
   <footer>
     <img class="footer-logo" src="images\logo.svg" alt="Shortly logo"></img>
-    
-    
-    <ul>
+    <ul class="conjunto-nav">
       <li><h5>Features</h5></li>
       <li><a href="#encurtador">Link Shortening</a></li>
       <li><a href="#">Branded Links</a></li>
       <li><a href="#">Analytics</a></li>
     </ul>
-    <ul>  
+    <ul class="conjunto-nav">  
       <li><h5>Resources</h5></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Developers</a></li>
       <li><a href="#">Support</a></li>
     </ul>
-    <ul>
+    <ul class="conjunto-nav">
       <li><h5>Company</h5></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Our Team</a></li>
       <li><a href="#">Careers</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-    <button class="redes-sociais"><img src="images\icon-facebook.svg" alt="Facebook"></img></button>
-    <button class="redes-sociais"><img src="images\icon-twitter.svg" alt="Twitter"></img></button>
-    <button class="redes-sociais"><img src="images\icon-pinterest.svg" alt="Pinterest"></img></button>
-    <button class="redes-sociais"><img src="images\icon-instagram.svg" alt="Instagram"></img></button>
+    <div class="caixa-redes">
+      <button class="redes-sociais"><img src="images\icon-facebook.svg" alt="Facebook"></img></button>
+      <button class="redes-sociais"><img src="images\icon-twitter.svg" alt="Twitter"></img></button>
+      <button class="redes-sociais"><img src="images\icon-pinterest.svg" alt="Pinterest"></img></button>
+      <button class="redes-sociais"><img src="images\icon-instagram.svg" alt="Instagram"></img></button>
+    </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.linkedin.com/in/williansato/">Willian Sato</a>.
+      Coded by <a href="https://www.linkedin.com/in/williansato/" target="_blank">Willian Sato</a>.
     </div>
 </footer>
   <script src="index.js"></script>

@@ -2,6 +2,7 @@
 
 :root {
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 
 a {
@@ -11,11 +12,52 @@ a {
 h1 {
     font-size: 42px;
     margin: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+h3 {
+    margin: 20px;
+    font-weight: 700;
+}
+
+h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h5 {
+    margin: 20px;
 }
 
 p {
+    padding-bottom: 30px;
     margin: 20px;
     line-height: 1.5;
+    color: hsl(0, 0%, 75%);
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+input {
+    padding: 15px 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 
 body {
@@ -31,7 +73,7 @@ header {
     margin: 30px 20px;
 }
 
-.botao-capsula {
+.botao-capsula-menu {
     color: #fff;
     border-radius: 25px;
     background-color: hsl(180, 66%, 49%);
@@ -41,6 +83,16 @@ header {
     display: flex;
     align-self: stretch;
     justify-content: center;
+}
+
+.botao-capsula {
+    color: #fff;
+    border-radius: 30px;
+    background-color: hsl(180, 66%, 49%);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 40px;
+    margin: 30px 0;
 }
 
 .menu {
@@ -53,6 +105,7 @@ header {
     width: 100%;   
     padding: 30px 0;
     margin-top: 30px;
+    z-index: 1;
 }
 
 hr {
@@ -64,6 +117,14 @@ hr {
     text-decoration: none;   
     color: #fff;
     margin: 20px;
+}
+
+.canto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;   
+    margin-top: 10px;
 }
 
 .inativo {
@@ -93,20 +154,197 @@ hr {
 }
 
 .principal {
-    margin: 30px;
+    padding: 50px 0;
     text-align: center;
 }
 
-.principal img{
-    width: 100%;
+.caixa-banner {
+    overflow: hidden;
 }
 
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100vh;
+    right: -70px;
+}
+
+.fundo {
+    background-color: hsl(257, 7%, 95%);
+}
+
+.margem {
+    position: relative;
+    margin: 0 20px;
+}
+
+.encurtador {
+    position: relative;
+    background-color: hsl(257, 27%, 26%);
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 960px;
+    margin: 100px auto;
+}
+
+.bg {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.caixa-conteudo {
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.caixa-conteudo-rodape {
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.url {
+    margin: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.encurta-url {
+    margin: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*
 input:valid {
     background-color: lightgreen;
   }
 
 input:invalid {
     background-color: rgb(250, 73, 73);
+}
+*/
+
+.estatisticas {
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+.caixa {
+    max-width: 400px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.topicos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-topicos {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    text-align: center;
+    z-index: 2;
+}
+
+.caixa-topicos h3 {
+    padding-top: 70px;
+}
+
+.linha {
+    position: absolute;
+    margin: 0 auto;
+    top: 500px;
+}
+
+.linha hr {
+    border-color: hsl(180, 66%, 49%);
+    transform: rotate(90deg);
+    border-width: 5px;
+    width: 700px;
+}
+
+.icones {
+    position: absolute;
+    top: -45px;
+    background-color: hsl(257, 27%, 26%);
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.rodape {
+    position: relative;
+    width: 100%;
+    background-color: hsl(257, 27%, 26%);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rodape .bg {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    background-color: hsl(260, 8%, 14%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding: 40px;
+}
+
+.footer-logo {
+    filter:invert(100%) brightness(2);
+    padding: 30px;
+}
+
+.conjunto-nav {
+    text-align: center;
+}
+
+li {
+    margin: 15px;
+}
+
+li a {
+    color: hsl(0, 0%, 75%);
+}
+
+.caixa-redes {
+    margin: 20px;
+}
+
+
+.caixa-redes button {
+    background-color: transparent;
 }
 
 .attribution { font-size: 11px; 
@@ -115,4 +353,218 @@ input:invalid {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 1000px) {
+   .mobile {
+    display: none;
+   }
+   
+   .desktop {
+    display: block;
+   }
+
+    h1 {
+    font-size: 4em;
+   }
+
+   h2, h4 {
+    font-size: 2.5em;
+   }
+   
+   body {
+    overflow-x: hidden;
+   }
+
+    header {
+        position: relative;
+        margin: 70px 200px;
+    }
+   
+    .menu {
+        position: absolute;
+        background-color: transparent;
+        display: inline;
+        width: 95%;   
+        padding: 10px 0;
+        margin: 0 30px;
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    #botao-menu {
+        display: none;
+    }
+
+    .botao-capsula-menu {
+        cursor: pointer;
+        padding: 15px 30px;
+        display: inline;
+    }
+
+    .menu a {   
+        color: hsl(0, 0%, 50%);
+    }
+
+    .canto {
+        position: absolute;
+        display: inline;
+        width: auto;  
+        margin-top: 0;
+        right: 0;
+    }
+
+    .principal {
+        position: relative;
+        margin: 100px 200px;
+        padding: 50px 0;
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 480px;
+    }
+
+    .principal-texto {
+        grid-column: 1;
+        grid-row: 1;
+        width: 575px;
+    }
+
+    .botao-capsula {
+        color: #fff;
+        border-radius: 30px;
+        background-color: hsl(180, 66%, 49%);
+        cursor: pointer;
+        font-size: 18px;
+        padding: 15px 40px;
+        margin: 20px;
+    }
+
+    .caixa-banner {
+        position: absolute;
+        overflow: visible;
+        right: -200px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .banner {
+        position: relative;
+        min-width: max-content;
+    }
+
+    .encurtador {
+        position: relative;
+        background-color: hsl(257, 27%, 26%);
+        padding: 30px 40px;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        overflow: hidden;
+        max-width: 960px;
+        margin: 100px auto;
+    }
+
+    .caixa-conteudo {
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .url {
+        margin: 20px;
+        width: 80%;
+        border-radius: 5px;
+    }
+    
+    .encurta-url {
+        margin: 20px;
+        width: 20%;
+        border-radius: 5px;
+    }
+
+    .caixa {
+        max-width: 600px;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .estatisticas {
+        margin: 0 200px;
+        display: grid;
+    }
+
+    .topicos {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(12, 34px);
+        column-gap: 30px;
+        margin: 0 auto;
+    }
+
+    .caixa-topicos {
+        position: relative;
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 350px;
+        text-align: start;
+        z-index: 2;
+    }
+
+    .topico-recognition {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .topico-records {
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    .topico-customizable {
+        grid-column: 3;
+        grid-row: 7;
+    }
+
+    .linha {
+        position: absolute;
+        margin: 0 auto;
+        top: 182px;
+        left: 200px;
+    }
+
+    .linha hr {
+        border-color: hsl(180, 66%, 49%);
+        transform: rotate(0deg);
+        border-width: 5px;
+        width: 900px;
+    }
+
+    .rodape {
+        position: relative;
+        width: 100%;
+        background-color: hsl(257, 27%, 26%);
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .caixa-conteudo-rodape {
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
