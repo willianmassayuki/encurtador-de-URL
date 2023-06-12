@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <!--<script src="jquery.js"></script> -->
 </head>
 
 <body>
@@ -33,7 +34,7 @@
         <h1>More than just shorter links</h1>
         <p>Build your brand’s recognition and get detailed insights 
         on how your links are performing.</p>
-        <a class="botao-capsula" href="#">Get Started</a>
+        <a class="botao-capsula" href="#encurtador">Get Started</a>
       </div>
     </section>
     <div class="fundo">
@@ -42,9 +43,16 @@
         <img class="mobile bg" src="images\bg-shorten-mobile.svg"></img>
         <img class="desktop bg" src="images\bg-shorten-desktop.svg"></img>
        <div class="caixa-conteudo flex-row">
-          <input class="url" type="url" placeholder="   Shorten a link here..."></input>
+          <input class="url" id="url" type="url" placeholder="   Shorten a link here..."></input>
           <button class="encurta-url">Shorten It!</button>
         </div>
+    </section>
+    <section>
+      <div class="respostas">
+        <div id="inativo">
+        <p>endereço antigo</p> <a href="#short-link">endereço novo</a> <button class="btnCopiar">Copy!</button>
+        </div>
+      </div>
     </section>
    
     <section class="estatisticas">
@@ -88,26 +96,26 @@
     <img class="desktop bg" src="images\bg-boost-desktop.svg"></img>
     <div class="caixa-conteudo-rodape">
       <h4>Boost your links today</h4>
-      <a class="botao-capsula" href="#">Get Started</a>
+      <a class="botao-capsula" href="#encurtador">Get Started</a>
     </div>
   </section>
 </div>
 </div>
   <footer>
     <img class="footer-logo" src="images\logo.svg" alt="Shortly logo"></img>
-    <ul class="conjunto-nav">
+    <ul class="conjunto-nav nav-features">
       <li><h5>Features</h5></li>
       <li><a href="#encurtador">Link Shortening</a></li>
       <li><a href="#">Branded Links</a></li>
       <li><a href="#">Analytics</a></li>
     </ul>
-    <ul class="conjunto-nav">  
+    <ul class="conjunto-nav nav-resources">  
       <li><h5>Resources</h5></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Developers</a></li>
       <li><a href="#">Support</a></li>
     </ul>
-    <ul class="conjunto-nav">
+    <ul class="conjunto-nav nav-company">
       <li><h5>Company</h5></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Our Team</a></li>
@@ -115,10 +123,10 @@
       <li><a href="#">Contact</a></li>
     </ul>
     <div class="caixa-redes">
-      <button class="redes-sociais"><img src="images\icon-facebook.svg" alt="Facebook"></img></button>
-      <button class="redes-sociais"><img src="images\icon-twitter.svg" alt="Twitter"></img></button>
-      <button class="redes-sociais"><img src="images\icon-pinterest.svg" alt="Pinterest"></img></button>
-      <button class="redes-sociais"><img src="images\icon-instagram.svg" alt="Instagram"></img></button>
+      <button><img class="svg redes-sociais" src="images\icon-facebook.svg" alt="Facebook"></img></button>
+      <button><img class="svg redes-sociais" src="images\icon-twitter.svg" alt="Twitter"></img></button>
+      <button><img class="svg redes-sociais" src="images\icon-pinterest.svg" alt="Pinterest"></img></button>
+      <button><img class="svg redes-sociais" src="images\icon-instagram.svg" alt="Instagram"></img></button>
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
